@@ -1,3 +1,3 @@
 <?php
-$con=mysqli_connect("localhost","root","1234","tesco")
+$con=mysqli_connect("localhost","root","","tesco")
 ?>

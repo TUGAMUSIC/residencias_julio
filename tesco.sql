@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-12-2022 a las 03:05:25
--- Versión del servidor: 10.4.27-MariaDB
--- Versión de PHP: 7.4.33
+-- Tiempo de generación: 07-12-2022 a las 07:16:40
+-- Versión del servidor: 10.4.22-MariaDB
+-- Versión de PHP: 8.0.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -31,7 +31,7 @@ CREATE TABLE `administrativos` (
   `Matricula` int(11) NOT NULL,
   `Area` varchar(150) DEFAULT NULL,
   `Psswrd` varchar(50) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -47,7 +47,15 @@ CREATE TABLE `alumnos` (
   `Psswrd` varchar(50) DEFAULT NULL,
   `Carrera` varchar(4) DEFAULT NULL,
   `Turno` varchar(10) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `alumnos`
+--
+
+INSERT INTO `alumnos` (`Matricula`, `Nombre`, `Paterno`, `Materno`, `Psswrd`, `Carrera`, `Turno`) VALUES
+(199925153, 'Dr. Campero', 'Bootstrap', 'De Pastor', '1234', 'SIC', 'Matutino'),
+(199958162, 'Dr. Vivanco', 'APA', 'Crespo', '1234', 'SIC', '');
 
 --
 -- Índices para tablas volcadas
